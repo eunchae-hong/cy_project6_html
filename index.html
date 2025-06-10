@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Costco Careers Account Setup</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+  }
+  h1 {
+    color: #004b8d; /* Costco blue */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #f15a22; /* Costco orange */
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #c64515;
+  }
+  .footer-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 30px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Costco Careers Account</h1>
+    <form action="submit.html" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+      
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="password">Create Password</label>
+      <input type="password" id="password" name="password" required />
+      
+      <button type="submit">Create Account</button>
+    </form>
+    <p class="footer-text">By creating an account, you agree to Costco's Terms of Use and Privacy Policy.</p>
+  </div>
+</body>
+</html>
